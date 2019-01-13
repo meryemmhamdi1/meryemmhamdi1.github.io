@@ -1,37 +1,6 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/meryemmhamdi1/meryemmhamdi1.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Briefly About me:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/meryemmhamdi1/meryemmhamdi1.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+I am a candidate PhD student in computer science and a research assistant at [Information Sciences Institute (ISI)](https://www.isi.edu/) in [University of Southern California (USC)](https://www.usc.edu/), Los Angeles. I work in Natural Language Processing Group under the supervision of Prof. Jonathan May. My research purpose is to adapt a cross-domain and multilingual approach to different semantic tasks mainly related to dialogue systems and information extraction in low resource setting. Prior to joining ISI, I obtained a Bachelor of Science in Computer Science from [Al Akhawayn University (AUI)](http://www.aui.ma/en/) in Morocco and a Master in Computer Science from [Ecole Polytechnique Federale de Lausanne (EPFL)](https://www.epfl.ch/) in Swizerland. My research aspirations come from her passion for learning new languages and discovering new cultures through traveling. 
+ 
+ 
