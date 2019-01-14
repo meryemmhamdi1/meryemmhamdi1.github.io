@@ -1,6 +1,6 @@
 # Site setings
-name: 'Horace'
-description: 'Horace is a simple Jekyll theme for writers and bloggers. Explore it yourself.'
+name: 'Meryem M'hamdi'
+description: 'This website is to introduce myself, my background and my current work'
 meta_description: 'Jekyll template, minimal style, perfect for bloggers.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
@@ -15,27 +15,27 @@ ga_analytics:
 
 # Author
 author:
-  name: 'Daniel Bennett'
+  name: 'Meryem M'hamdi'
   image: 'authorimage.jpg'
   greetings: 'Hi there!'
-  description: "My name is Daniel Bennett. I'm a freelance front-end developer, author and speaker based in Austin, TX. It’s nice to meet you."
-  bio: 'Daniel is a designer, photographer, speaker, author of a couple of books about typography and the founder of photo magazine Curious.'
+  description: "My name is Meryem M'hamdi. I am a candidate PhD student in computer science and a research assistant at [Information Sciences Institute (ISI)](https://www.isi.edu/) in [University of Southern California (USC)](https://www.usc.edu/), Los Angeles. I work in Natural Language Processing Group under the supervision of Prof. Jonathan May. My research purpose is to adapt a cross-domain and multilingual approach to different semantic tasks mainly related to dialogue systems and information extraction in low resource setting. It's nice to meet you :)"
+  bio: 'Meryem obtained a Bachelor of Science in Computer Science from [Al Akhawayn University (AUI)](http://www.aui.ma/en/) in Morocco and a Master in Computer Science from [Ecole Polytechnique Federale de Lausanne (EPFL)](https://www.epfl.ch/) in Swizerland. My research aspirations come from her passion for learning new languages and discovering new cultures through traveling.'
 
 # Contact form setings
-email: youremail@email.com
+email: meryemmhamdi1@gmail.com
 contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
 twitter: 'username'
 facebook: 'username'
-github: 'username'
+github: 'meryemmhamdi1'
 codepen: 'username'
 dribbble: 'username'
 medium: '@username'
 instagram: 'username'
 pinterest: 'username'
-linkedin: 'username'
+linkedin: 'meryem-m-hamdi-69964980'
 producthunt: '@username'
 
 # Navigation
