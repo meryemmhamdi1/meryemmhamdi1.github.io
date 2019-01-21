@@ -1,0 +1,7 @@
+.idea/*
+.DS_Store
+.sass-cache/*
+Documentation/.DS_Store
+Documentation/assets/.DS_Store
+assets/.DS_Store
+assets/images/.DS_Store
