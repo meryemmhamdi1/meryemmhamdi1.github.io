@@ -33,9 +33,7 @@ For event detection, we follow an unsupervised methodology based on the clusteri
 
 {% include image-caption.html imageurl="/assets/images/posts/2018/eventdet.png" title="Multilingual Event Detection Pipeline" caption="Multilingual Event Detection Pipeline" %}
 
-#### Evaluation Results:
-
-Consistent Gain across Tasks !
+#### Consistent Gain across Tasks !
 
 We observe a consistent gain across different tasks especially for low resourced languages and less complex text classification architectures regardless of the type of the multilingual embeddings used. We observe a general tendency of multilingual embeddings fined-tuned on top of monolingual embeddings using techniques such as SVD, CCA to perform better for simpler text classification models.
 

@@ -5,8 +5,8 @@
     <description>This website is to introduce myself, my background and my current work</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Jan 2019 00:00:19 -0800</pubDate>
-    <lastBuildDate>Tue, 22 Jan 2019 00:00:19 -0800</lastBuildDate>
+    <pubDate>Tue, 22 Jan 2019 00:02:49 -0800</pubDate>
+    <lastBuildDate>Tue, 22 Jan 2019 00:02:49 -0800</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -53,9 +53,7 @@
     
 &lt;/figure&gt;
 
-&lt;h4 id=&quot;evaluation-results&quot;&gt;Evaluation Results:&lt;/h4&gt;
-
-&lt;p&gt;Consistent Gain across Tasks !&lt;/p&gt;
+&lt;h4 id=&quot;consistent-gain-across-tasks-&quot;&gt;Consistent Gain across Tasks !&lt;/h4&gt;
 
 &lt;p&gt;We observe a consistent gain across different tasks especially for low resourced languages and less complex text classification architectures regardless of the type of the multilingual embeddings used. We observe a general tendency of multilingual embeddings fined-tuned on top of monolingual embeddings using techniques such as SVD, CCA to perform better for simpler text classification models.&lt;/p&gt;
 
