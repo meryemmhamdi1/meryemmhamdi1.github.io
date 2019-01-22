@@ -1,15 +1,20 @@
 ---
 layout: page
 title: About
-featured_image: /assets/images/pages/about.jpg
+featured_image: /assets/images/pages/aboutme.jpg
 ---
 
-Daniel Bennett is a senior developer from Vilnius, Lithuania. After graduating from The College with a degree in **Computer Science**, he worked for three small web shops where he honed his development skills and love for JavaScript.
+Meryem recently obtained a Master in Computer Science from <a href= "https://www.epfl.ch/"> Ecole Polytechnique Federale de Lausanne (EPFL) </a> in Swizerland. She holds a Bachelor of Science in Computer Science from <a href= "http://www.aui.ma/en/"> Al Akhawayn University (AUI) </a> in Morocco.
 
-His work has been recognized by Communication Arts, IBM, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. **Net** magazine named him a person to watch in 2018.
+She worked on multiple projects both in academia and industry not only in the domain of natural language processing and machine learning but also software engineering mainly database backend management
+, web and android development and has worked as teaching assistant for numerous undegraduate computer science courses. Her recent industrial experience include her master thesis project done in
+<a href="https://www.swisscom.ch/en/about/company/innovation.html"> Swisscom Digital Lab in EPFL Innovation Park </a> in Lausanne, Switzerland and her internship on Goal Oriented Dialog systems using deep learning in <a href="https://www.sony.net/"> Sony European Technology Center </a> in Stuttgart, Germany.
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+Her research aspirations come from her passion for learning new languages and discovering new cultures through traveling. Follow her on instagram for up to date travel photos, stories and special souvenirs.
 
-As a hobby, Daniel authors the most influential JavaScript blog in Lithuania with over 100,000 page views a month. He lives in Vilnius with his beautiful wife, two boys and one girl.
+
+>I find that the harder I work, the more luck I seem to have. <cite>Thomas Jefferson</cite>
+
+As a hobby, Meryem likes meditation in nature, yoga and zumba dancing. It not only helps her to have fun but also to refresh and become more productive.
 
 *Thank You for reading!*

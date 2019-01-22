@@ -2,10 +2,9 @@
 
 name: "Meryem M'hamdi"
 description: 'Horace is a simple Jekyll theme for writers and bloggers. Explore it yourself.'
-name: "Meryem M'hamdi"
+name: "<i class='fas fa-home'></i>"
 description: 'This website is to introduce myself, my background and my current work'
 meta_description: 'Jekyll template, minimal style, perfect for bloggers.'
-logo: ''
 favicon: 'assets/images/favicon.ico'
 baseurl: 
 production_url: https://horace.netlify.com/
@@ -19,35 +18,41 @@ ga_analytics:
 # Author
 author:
   name: "Meryem M'hamdi"
-  image: 'authorimage.png'
+  image: 'authorimage2.png'
   greetings: 'Hi there!'
-  description: "My name is Meryem M'hamdi. I am a candidate PhD student in computer science and a research assistant at [Information Sciences Institute (ISI)](https://www.isi.edu/) in [University of Southern California (USC)](https://www.usc.edu/), Los Angeles. I work in Natural Language Processing Group under the supervision of Prof. Jonathan May. My research purpose is to adapt a cross-domain and multilingual approach to different semantic tasks mainly related to dialogue systems and information extraction in low resource setting. It's nice to meet you :)"
-  bio: 'Meryem obtained a Bachelor of Science in Computer Science from [Al Akhawayn University (AUI)](http://www.aui.ma/en/) in Morocco and a Master in Computer Science from [Ecole Polytechnique Federale de Lausanne (EPFL)](https://www.epfl.ch/) in Swizerland. My research aspirations come from her passion for learning new languages and discovering new cultures through traveling.'
+  description: "<p> My name is Meryem M'hamdi. I am a candidate PhD student in computer science and a research assistant at
+   <a href=https://www.isi.edu/> Information Sciences Institute (ISI) </a> in <a href=https://www.usc.edu/> University of Southern California (USC) </a> in Los Angeles. <br> <br>
+   I work in Natural Language Processing Group under the supervision of Prof. Jonathan May.
+   My research purpose is to adapt a cross-domain and multilingual approach to different semantic tasks mainly related to dialogue systems and information extraction in low resource setting. <br><br> It's nice to meet you :) </p>"
+  bio: 'Meryem obtained a Bachelor of Science in Computer Science from [Al Akhawayn University (AUI)](http://www.aui.ma/en/) in Morocco and a Master in Computer Science from [Ecole Polytechnique Federale de Lausanne (EPFL)](https://www.epfl.ch/) in Swizerland. My research aspirations come from her passion for learning new languages and discovering new cultures through traveling. '
 
 # Contact form setings
 email: meryemmhamdi1@gmail.com
-contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
+#contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
+contact_page_description: ""
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
-twitter: 'username'
-facebook: 'username'
+#twitter: 'username'
+
 github: 'meryemmhamdi1'
-codepen: 'username'
-dribbble: 'username'
-medium: '@username'
-instagram: 'username'
-pinterest: 'username'
+#codepen: 'username'
+#dribbble: 'username'
+#medium: '@username'
 linkedin: 'meryem-m-hamdi-69964980'
-producthunt: '@username'
+facebook: 'Meryem.Mhamdi.2'
+instagram: 'meryem.mhamdi'
+#pinterest: 'username'
+
+#producthunt: '@username'
 
 # Navigation
 navigation:
-  - text: About
+  - text: "About  <i class='fas fa-user'></i>"
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
-  - text: Contact Me
+  - text: "Projects   <i class='fas fa-briefcase'></i>"
+    url: /projects-publications/
+  - text: "Contact   <i class='fas fa-comments'></i>"
     url: /contact/
 
 # Required Plugins

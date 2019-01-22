@@ -63,6 +63,28 @@
   max-width: 1080px;
 }
 
+.tCenter {
+    text-align: center;
+}
+
+.but.opc-1 {
+    background: #d81578;
+    color: #f9f9fb;
+}
+
+.but.opc-1.ico, .but.opc-2.ico, .but.opc-3.ico {
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+
+.but.ico {
+    padding: 8px 25px 8px 45px;
+}
 /**
  * 4. Site Header
  * ----------------------------------------------------------------------------
@@ -470,6 +492,7 @@
   margin: 0 3px 0.5em;
   width: 36px;
 }
+
 
 /**
  * 5.2 Comments
@@ -1117,3 +1140,34 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.address-info p {
+    color: #2d2d2d;
+    font-size: 18px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    line-height: 30px;
+}
+
+.info-holder {
+    border: 1px solid #efefef;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info li .ico {
+    color: #ffffff;
+    font-size: 20px;
+    height: 80px;
+    left: 50%;
+    line-height: 52px;
+    margin-left: -36px;
+    position: absolute;
+    top: 28px;
+    width: 80px;
+    border: 15px solid #ffffff;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
