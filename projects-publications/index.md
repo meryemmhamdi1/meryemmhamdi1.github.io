@@ -54,3 +54,4 @@ In this work, we dig deep into the analysis of the MOOC dataset, study correlati
 
 We argue that Random Forest is the best algorithm in the case of classification as it gave us improved performance of 64\% on the test dataset, while Gradient Boosting Machine algorithm gave the smallest error of 35.94\% in the case of regression.
 
+<a href='https://github.com/meryemmhamdi1/DELA_Project'> [Code] </a>

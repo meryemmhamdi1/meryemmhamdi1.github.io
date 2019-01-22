@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/transfer-learning-multilingual-emb</loc>
+<lastmod>2018-08-27T00:00:00-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/contact/</loc>
 </url>
 <url>
@@ -17,6 +21,27 @@
 </url>
 <url>
 <loc>http://localhost:4000/thank-you</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/nlp/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/embeddings/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/multilingual/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/transfer-learning/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/event-detection/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/churn-detection/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/document-classification/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/Documentation/</loc>

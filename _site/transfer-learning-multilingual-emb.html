@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Transfer Learning using Multilingual Embeddings</title>
+<meta name="generator" content="Jekyll v3.4.0" />
+<meta property="og:title" content="Transfer Learning using Multilingual Embeddings" />
+<meta name="author" content="Meryem M'hamdi" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If a borderless world is an impossible fantasy, reducing borders between languages at least is not out of reach. With over 6,500 spoken languages around the globe, creating a unique customer service experience for everyone is a challenge faced by many companies around the world. The majority of existing applications in machine learning are language-specific which makes them not up to the challenge, as extending them to new languages implies the overhead of training from scratch. The future of many natural language understanding tasks lies in their ability to bridge the gap between different languages. But, how can this be made possible efficiently? No, you don’t even need a translator. The key is multilingual embeddings which open up countless opportunities for developing language agnostic models." />
+<meta property="og:description" content="If a borderless world is an impossible fantasy, reducing borders between languages at least is not out of reach. With over 6,500 spoken languages around the globe, creating a unique customer service experience for everyone is a challenge faced by many companies around the world. The majority of existing applications in machine learning are language-specific which makes them not up to the challenge, as extending them to new languages implies the overhead of training from scratch. The future of many natural language understanding tasks lies in their ability to bridge the gap between different languages. But, how can this be made possible efficiently? No, you don’t even need a translator. The key is multilingual embeddings which open up countless opportunities for developing language agnostic models." />
+<link rel="canonical" href="http://localhost:4000/transfer-learning-multilingual-emb" />
+<meta property="og:url" content="http://localhost:4000/transfer-learning-multilingual-emb" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-27T00:00:00-07:00" />
+<script type="application/ld+json">
+{"description":"If a borderless world is an impossible fantasy, reducing borders between languages at least is not out of reach. With over 6,500 spoken languages around the globe, creating a unique customer service experience for everyone is a challenge faced by many companies around the world. The majority of existing applications in machine learning are language-specific which makes them not up to the challenge, as extending them to new languages implies the overhead of training from scratch. The future of many natural language understanding tasks lies in their ability to bridge the gap between different languages. But, how can this be made possible efficiently? No, you don’t even need a translator. The key is multilingual embeddings which open up countless opportunities for developing language agnostic models.","author":{"@type":"Person","name":"Meryem M'hamdi"},"@type":"BlogPosting","url":"http://localhost:4000/transfer-learning-multilingual-emb","headline":"Transfer Learning using Multilingual Embeddings","dateModified":"2018-08-27T00:00:00-07:00","datePublished":"2018-08-27T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/transfer-learning-multilingual-emb"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+
+    <!-- Site Favicon -->
+    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/png" />
+
+    <!-- Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet" />
+
+    <!-- CSS Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+
+<body class="layout-post">
+    <div id="page" class="site">
+
+        
+        <header id="masthead" class="site-header outer">
+    <div class="site-header-inside">
+        <div class="site-branding">
+            
+                <h1 class="site-title"><a href="/" rel="home"><i class='fas fa-home'></i></a></h1>
+            
+        </div><!-- .site-branding -->
+        <nav id="main-navigation" class="site-navigation" aria-label="Primary Navigation">
+            <ul class="menu">
+            
+                <li class="menu-item"><a href="/about/">About  <i class='fas fa-user'></i></a></li>
+            
+                <li class="menu-item"><a href="/projects-publications/">Projects   <i class='fas fa-briefcase'></i></a></li>
+            
+                <li class="menu-item"><a href="/contact/">Contact   <i class='fas fa-comments'></i></a></li>
+            
+            </ul>
+            <button id="sidebar-show" class="sidebar-toggle"><span class="screen-reader-text">Open Sidebar</span><span class="icon-more" aria-hidden="true"></span></button>
+        </nav><!-- .site-navigation -->
+    </div><!-- .site-header-inside -->
+</header><!-- .site-header -->
+        
+
+        <div id="content" class="site-content fadeInDown delay_075s">
+    <main id="main" class="site-main outer">
+        <article class="post-full inner">
+            <header class="post-header">
+                <div class="post-meta">
+                    <time class="post-date" datetime="2018-08-27">August 27,
+                        2018</time>
+                </div><!-- .post-meta -->
+                <h1 class="posttitle">Transfer Learning using Multilingual Embeddings</h1>
+            </header><!-- .post-header -->
+            
+            <div class="post-thumbnail"><img class="featured-image img-fluid" src="assets/images/posts/2018/multilingualism.jpeg"
+                    alt="Transfer Learning using Multilingual Embeddings"></div>
+            
+            <div class="post-content">
+                <p>If a borderless world is an impossible fantasy, reducing borders between languages at least is not out of reach. With over 6,500 spoken languages around the globe, creating a unique customer service experience for everyone is a challenge faced by many companies around the world. The majority of existing applications in machine learning are language-specific which makes them not up to the challenge, as extending them to new languages implies the overhead of training from scratch. The future of many natural language understanding tasks lies in their ability to bridge the gap between different languages. But, how can this be made possible efficiently? No, you don’t even need a translator. The key is multilingual embeddings which open up countless opportunities for developing language agnostic models.</p>
+
+<h4 id="multilingual-word-embeddings">Multilingual Word Embeddings</h4>
+
+<p>Word embeddings are the mechanism that enables the representation of words in a low dimensional vector space. This ability makes it intuitive to work with words and deduce their relationships, as words that are similar in meaning are projected close to each other in the vector space. A natural extension which maps different languages to one common space is what we refer to as multilingual embeddings. Methodologies for devising such embeddings depend on the granularity of the alignment information: word, sentence, documents or their combination and on whether they are trained from scratch or fine-tuned on top of monolingual embeddings.</p>
+
+<figure>
+    <img src="/assets/images/posts/2018/jointmultilingualspace.gif" alt="Offline Alignment to Joint Multilingual Space" />
+    
+        <figcaption class="caption-text">Offline Alignment to Joint Multilingual Space</figcaption> 
+    
+</figure>
+
+<h4 id="evaluation-of-multilingual-embeddings">Evaluation of Multilingual Embeddings</h4>
+<p>The strategies used for evaluating this kind of embeddings fall into two categories: intrinsic and extrinsic. Intrinsic evaluation focuses on directly testing the ability of those embeddings in capturing syntactic and semantic relationships between words in tasks like cross-lingual nearest neighbors and word translation. On the other hand, extrinsic evaluation indirectly examines their performance when used as input features for downstream semantic transfer tasks such as cross-lingual document classification, multilingual chatbot intent detection and so on. Existing benchmarks for extrinsic evaluation focus on the comparison between the different multilingual embeddings when used for training on one language and testing on a different language, while a comparison between the performance using multilingual and monolingual training modes is obviously lacking. One distinct advantage of multilingual over monolingual training is their efficiency, as it is time-consuming to train multiple language-specific models while one single multilingual model can be trained once and do the trick. But, is there any accuracy gain over monolingual models?</p>
+
+<p>Determining the usefulness of those embeddings across different semantic understanding tasks in terms of the gain in accuracy of the multilingual model over language-specific models is the primary focus of this master thesis. Our motivation is that not all languages are equally good by their own for all semantic tasks. For some languages, there are plenty of training resources, while other languages are under-represented. One way to reduce the gap between languages is through the semantic transfer of annotation from rich to low resourced languages. Other interesting use cases are multinational manifestations, where multiple languages can be combined to detect any anomalies in customer behavior around the world. Accurate anomalies are more likely to be detected if a language-agnostic model is used.</p>
+
+<p>In this work, we develop an end-to-end systemic benchmarking system which revisits the previous benchmark for cross-lingual document classification and tackles unexplored applications namely cross-lingual churn detection and event detection. Our aim is to reach clear conclusions regarding for which applications, type of multilingual embeddings and configuration is the gain more pronounced.</p>
+
+<h4 id="multilingual-text-classification">Multilingual Text Classification:</h4>
+
+<p>We treat cross-lingual document classification and churn detection as two instances of one general framework: text classification. We design different experiments leveraging deep learning with different feature extractors (CNN, GRU with Attention or both), aggregators and different levels of deepness. We pick a representative set of multilingual embeddings trained independently and feed them to our classification pipeline. In a second experiment, we multi-task learning the embeddings alongside with the application at hand. This is a multivariate analysis, as it investigates the transfer learning gain for different languages, multilingual embeddings and text architectures.</p>
+
+<figure>
+    <img src="/assets/images/posts/2018/cldc.png" alt="Multilingual Text Classification Pipeline" />
+    
+        <figcaption class="caption-text">Multilingual Text Classification Pipeline</figcaption> 
+    
+</figure>
+
+<h4 id="multilingual-event-detection">Multilingual Event Detection:</h4>
+
+<p>For event detection, we follow an unsupervised methodology based on the clustering of bursty keywords. We define an event as a cluster of semantically similar keywords which are not only important syntactically but also exhibit an unusual behavior with respect to the time distribution of tweets and number of users mentioning them. Word embeddings are harnessed to compute semantic similarities, then “Jarvis-Patrick Nearest Neighbours”, a scalable non-hierarchical clustering algorithm, is used. The generated clusters are evaluated against a set of sub-events in World Cup 2018.</p>
+
+<figure>
+    <img src="/assets/images/posts/2018/eventdet.png" alt="Multilingual Event Detection Pipeline" />
+    
+        <figcaption class="caption-text">Multilingual Event Detection Pipeline</figcaption> 
+    
+</figure>
+
+<h4 id="evaluation-results">Evaluation Results:</h4>
+
+<p>Consistent Gain across Tasks !</p>
+
+<p>We observe a consistent gain across different tasks especially for low resourced languages and less complex text classification architectures regardless of the type of the multilingual embeddings used. We observe a general tendency of multilingual embeddings fined-tuned on top of monolingual embeddings using techniques such as SVD, CCA to perform better for simpler text classification models.</p>
+
+<p>For cross-lingual document classification, our results show that the gain in performance is at its best when a multilingual model is trained over the aggregation of all languages using a simple multi-layer perceptron achieving an average increase per language of 4.47%. The gain is of 7.66%, 6.63% and 3.2% for Italian, French and German respectively which matches the ascending order of language resourcefulness. We also achieve state-of-the-art performance on cross-lingual churn detection using a bidirectional GRU with attention implemented on top of CNN when training multilingually with F1-scores of 85.88% and 78.09% for English and German respectively which accounts for an cross-lingual average increase of 6.52%. In the same manner, we are able to prove the ability of the same model to generalize well to chatbot conversations.</p>
+
+<p>As far as event detection is concerned, the gain in favor of the multilingual approach is well pronounced, as it not only detects more event clusters but also those events are rich in content as the number of tweets to which they are linked is higher. These clusters are also shown to be better correlated with real-world sub-events in world cup 2018 dataset, such as goals, penalties and so on.</p>
+
+<p>I would like to express my special thanks to Christian Abbet and Athanasios Giannakopoulos for their collaboration on cross-lingual churn detection part. For more details in this regard, interested readers are invited to check this article Churn Intent Detection - Keep the fish in your bowl.</p>
+
+<p>This project is conducted under the supervision of Dr. Claudiu Musat from Swisscom, Switzerland telecommunication leader, and the Swisscom Digital Lab, an innovation lab located in the EPFL Innovation Park dedicated to conduct applied research in machine learning, data analytics, security and communication systems. It is also in close collaboration with Prof. Robert West from Data Science Lab at EPFL.</p>
+
+            </div>
+            <footer class="post-footer">
+                
+                <p class="post-tags">
+                     
+                    <a href='tag/nlp/'>NLP</a>
+                    
+                     
+                    <a href='tag/embeddings/'>Embeddings</a>
+                    
+                     
+                    <a href='tag/multilingual/'>Multilingual</a>
+                    
+                     
+                    <a href='tag/transfer- learning/'>Transfer Learning</a>
+                    
+                     
+                    <a href='tag/event- detection/'>Event Detection</a>
+                    
+                     
+                    <a href='tag/churn- detection/'>Churn Detection</a>
+                    
+                     
+                    <a href='tag/document- classification/'>Document Classification</a>
+                    
+                    
+                </p>
+                
+                <div class="post-share">
+                    <span class="post-share-title">Share:</span>
+                    <a target="_blank" href="https://twitter.com/share?text=Transfer+Learning+using+Multilingual+Embeddings&amp;url=https://horace.netlify.com/transfer-learning-multilingual-emb">Twitter</a>
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://horace.netlify.com/transfer-learning-multilingual-emb">Facebook</a>
+                </div><!-- .share-post -->
+            </footer>
+            <div class="author-box">
+                <div class="author-avatar"><img src="/assets/images/authorimage2.png" alt="Meryem M'hamdi's Picture"
+                        class="avatar"></div>
+                <div class="author-details">
+                    <h2 class="author-title">About Meryem M'hamdi</h2>
+                    <p class="author-description">Meryem obtained a Bachelor of Science in Computer Science from [Al Akhawayn University (AUI)](http://www.aui.ma/en/) in Morocco and a Master in Computer Science from [Ecole Polytechnique Federale de Lausanne (EPFL)](https://www.epfl.ch/) in Swizerland. My research aspirations come from her passion for learning new languages and discovering new cultures through traveling. </p>
+                </div>
+            </div>
+            
+<section id="comments-area" class="comments-area">
+    <h2 class="comments-title">Comments</h2>
+    <div class="comments-inside">
+        <div id="disqus_thread"></div>
+    </div><!-- .comments-inside -->
+    <div id="comments-overlay" class="comments-overlay">
+        <a href="#" id="comments-show" class="comments-show">Show comments</a>
+    </div><!-- .comments-overlay -->
+    <script type="text/javascript">
+        var disqus_shortname = 'justgoodthemes';
+        var disqus_developer = 0;
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+        </article>
+        
+        <section class="newsletter-box inner-wide">
+    <div class="inner">
+        <h2 class="newsletter-box-title">Subscribe to Meryem's newsletter</h2>
+        <p>Get the latest and greatest from Meryem delivered straight to your inbox every week.</p>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate gh-subscribe-form" target="_blank" novalidate>
+                <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+                <input type="email" value="" name="EMAIL" class="required email subscribe-email" id="mce-EMAIL" placeholder="Your email address">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+    </div><!-- .inner -->
+</section><!-- .widget -->
+        
+        <section class="read-next inner">
+            <h2 class="read-next-title">Read Next</h2>
+            
+            
+        </section><!-- .read-next -->
+    </main><!-- .site-main -->
+</div><!-- .site-content -->
+
+        
+
+        
+
+        <footer id="colophon" class="site-footer outer">
+            <div class="site-footer-inside">
+                <p class="social-links">
+    
+    
+    <a href="https://www.facebook.com/Meryem.Mhamdi.2" target="_blank">
+        <span class="fa-facebook-f fa" aria-hidden="true"></span>
+        <span class="screen-reader-text">Facebook</span>
+    </a>
+    
+    
+    <a href="https://github.com/meryemmhamdi1" target="_blank">
+        <span class="fa-github fa" aria-hidden="true"></span>
+        <span class="screen-reader-text">GitHub</span>
+    </a>
+    
+    
+    
+    
+    
+    <a href="https://www.instagram.com/meryem.mhamdi" target="_blank">
+        <span class="fa-instagram fa" aria-hidden="true"></span>
+        <span class="screen-reader-text">Instagram</span>
+    </a>
+    
+    
+    
+    <a href="https://www.linkedin.com/in/meryem-m-hamdi-69964980" target="_blank">
+        <span class="fa-linkedin fa" aria-hidden="true"></span>
+        <span class="screen-reader-text">Linkedin</span>
+    </a>
+    
+    
+</p>
+                <p class="site-info">
+                    <a href="#"><i class='fas fa-home'></i></a> &copy; 2019 . Horace theme by
+                    <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>. <br />
+                    Powered by <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+                </p>
+                <p class="back-to-top">
+                    <a id="top-button" class="top-button" href="#page">
+                        <span class="icon-arrow-up" aria-hidden="true"></span>
+                        <span class="screen-reader-text">Back to top</span>
+                    </a>
+                </p>
+            </div><!-- .site-footer-inside -->
+        </footer><!-- .site-footer -->
+    </div><!-- .site -->
+    <div id="site-overlay" class="site-overlay"></div>
+    <aside id="sidebar" class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="sidebar-inside">
+			<button id="sidebar-hide" class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span
+				    aria-hidden="true" class="icon-close"></span></button>
+			<nav id="sidebar-navigation" class="widget site-navigation">
+				<h2 class="widget-title">Explore Site</h2>
+				<ul class="menu">
+					
+						<li class="menu-item"><a href="/about/">About  <i class='fas fa-user'></i></a></li>
+					
+						<li class="menu-item"><a href="/projects-publications/">Projects   <i class='fas fa-briefcase'></i></a></li>
+					
+						<li class="menu-item"><a href="/contact/">Contact   <i class='fas fa-comments'></i></a></li>
+					
+				</ul>
+			</nav>
+			
+<section class="widget widget-text">
+    <h2 class="widget-title">About <i class='fas fa-home'></i></h2>
+    <p>This website is to introduce myself, my background and my current work</p>
+</section>
+
+
+<section class="widget widget-recent-posts">
+    <h2 class="widget-title">Recent Articles</h2>
+    <ul>
+        
+        <li>
+            <div class="post-header">
+                <div class="post-meta">
+                    <time class="published" datetime="??">August 27, 2018</time>
+                </div>
+                <div class="post-title">
+                    <a href="http://localhost:4000/transfer-learning-multilingual-emb">Transfer Learning using Multilingual Embeddings</a>
+                </div>
+            </div>
+            
+            <a class="post-thumbnail" href="/transfer-learning-multilingual-emb">
+                <img src="http://localhost:4000/assets/images/posts/2018/multilingualism.jpeg"
+                    alt="Transfer Learning using Multilingual Embeddings">
+            </a>
+            
+        </li>
+        
+    </ul>
+</section>
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tagcloud">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a href='https://horace.netlify.com/tag/churn- detection/'>Churn Detection</a>
+        
+        <a href='https://horace.netlify.com/tag/document- classification/'>Document Classification</a>
+        
+        <a href='https://horace.netlify.com/tag/embeddings/'>Embeddings</a>
+        
+        <a href='https://horace.netlify.com/tag/event- detection/'>Event Detection</a>
+        
+        <a href='https://horace.netlify.com/tag/multilingual/'>Multilingual</a>
+        
+        <a href='https://horace.netlify.com/tag/nlp/'>NLP</a>
+        
+        <a href='https://horace.netlify.com/tag/transfer- learning/'>Transfer Learning</a>
+        
+    </div>
+</section>
+
+
+<section class="widget widget-newsletter">
+    <div class="inner">
+        <h2 class="widget-title">Subscribe to Meryem's newsletter</h2>
+        <p>Get the latest and greatest from Meryem delivered straight to your inbox every week.</p>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                class="validate gh-subscribe-form" target="_blank" novalidate>
+                <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+                <input type="email" value="" name="EMAIL" class="required email subscribe-email" id="mce-EMAIL"
+                    placeholder="Your email address">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </form>
+        </div>
+    </div>
+</section>
+
+		</div><!-- .sidebar-inside -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->
+    
+    <!-- Javascript Assets -->
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/custom.js"></script>
+
+</body>
+
+</html>
