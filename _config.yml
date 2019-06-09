@@ -20,11 +20,11 @@ author:
   name: "Meryem M'hamdi"
   image: 'authorimage2.png'
   greetings: 'Hi!'
-  description: "<p> My name is Meryem M'hamdi. I am a PhD student in Computer Science and a research assistant at
-   <a href=https://www.isi.edu/> Information Sciences Institute (ISI) </a> in <a href=https://www.usc.edu/> University of Southern California (USC) </a> in Los Angeles. <br> <br>
-   I work in Natural Language Processing Group under the supervision of Prof. Jonathan May.
-   My research purpose is to adapt a cross-domain and multilingual approach to different semantic tasks mainly related to dialogue systems and information extraction in low resource setting. <br><br> It's nice to meet you :) </p>"
-  bio: 'Meryem holds a Master in Computer Science from <a href=https://www.epfl.ch/> Ecole Polytechnique Federale de Lausanne (EPFL) </a> in Swizerland and is currently pursuing her PhD in Computer Science with special focus on Natural Language Processing in <a href=https://www.usc.edu/> University of Southern California (USC) </a> in Los Angeles. Her research aspirations come from her passion for learning new languages and discovering new cultures through traveling. '
+  description: "My name is Meryem M'hamdi."
+  bio: 'Meryem holds a Master in Computer Science from <a href=https://www.epfl.ch/> Ecole Polytechnique Federale de Lausanne (EPFL) </a>
+  in Swizerland and is currently pursuing her PhD in Computer Science with special focus on Natural Language Processing in
+  <a href=https://www.usc.edu/> University of Southern California (USC) </a> in Los Angeles. Her research aspirations come
+  from her passion for learning new languages and discovering new cultures through traveling. '
 
 # Contact form setings
 email: meryemmhamdi1@gmail.com
