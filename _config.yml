@@ -19,7 +19,7 @@ ga_analytics:
 author:
   name: "Meryem M'hamdi"
   image: 'authorimage2.png'
-  greetings: 'Hi there!'
+  greetings: 'Hi!'
   description: "<p> My name is Meryem M'hamdi. I am a PhD student in Computer Science and a research assistant at
    <a href=https://www.isi.edu/> Information Sciences Institute (ISI) </a> in <a href=https://www.usc.edu/> University of Southern California (USC) </a> in Los Angeles. <br> <br>
    I work in Natural Language Processing Group under the supervision of Prof. Jonathan May.
