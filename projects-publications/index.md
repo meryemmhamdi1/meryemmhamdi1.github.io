@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects & Publications
-featured_image: /assets/images/pages/wordCloud2.png
+featured_image: 
 ---
 
 
