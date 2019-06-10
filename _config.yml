@@ -60,6 +60,7 @@ navigation:
   - text: "Contact   <i class='fas fa-comments'></i>"
     url: /contact/
 
+
 # Required Plugins
 plugins_dir:
   - jekyll-paginate

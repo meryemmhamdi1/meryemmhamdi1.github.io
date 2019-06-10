@@ -9,12 +9,3 @@ Meryem recently obtained a Master in Computer Science from <a href= "https://www
 She worked on multiple projects both in academia and industry not only in the domain of natural language processing and machine learning but also software engineering mainly database backend management
 , web and android development and has worked as teaching assistant for numerous undegraduate computer science courses. Her recent industrial experience include her master thesis project done in
 <a href="https://www.swisscom.ch/en/about/company/innovation.html"> Swisscom Digital Lab in EPFL Innovation Park </a> in Lausanne, Switzerland and her internship on Goal Oriented Dialog systems using deep learning in <a href="https://www.sony.net/"> Sony European Technology Center </a> in Stuttgart, Germany.
-
-Her research aspirations come from her passion for learning new languages and discovering new cultures through traveling. Follow her on instagram for up to date travel photos, stories and special souvenirs.
-
-
->I find that the harder I work, the more luck I seem to have. <cite>Thomas Jefferson</cite>
-
-As a hobby, Meryem likes meditation in nature, yoga and zumba dancing. It not only helps her to have fun but also to refresh and become more productive.
-
-*Thank You for reading!*
