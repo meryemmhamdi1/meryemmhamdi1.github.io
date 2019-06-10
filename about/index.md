@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-featured_image:/assets/images/pages/wordCloud2.png
+featured_image: assets/images/pages/wordCloud2.png
 ---
 
 Meryem recently obtained a Master in Computer Science from <a href= "https://www.epfl.ch/"> Ecole Polytechnique Fédérale de Lausanne (EPFL) </a> in Swizerland. She holds a Bachelor of Science in Computer Science from <a href= "http://www.aui.ma/en/"> Al Akhawayn University (AUI) </a> in Morocco.
