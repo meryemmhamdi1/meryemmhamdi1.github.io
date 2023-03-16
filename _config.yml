@@ -40,16 +40,15 @@ contact_page_description: ""
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
-#twitter: 'username'
-
+twitter: 'MeryemMhamdi1'
 github: 'meryemmhamdi1'
 #codepen: 'username'
 #dribbble: 'username'
 #medium: '@username'
 linkedin: 'meryem-m-hamdi-69964980'
-facebook: 'Meryem.Mhamdi.2'
-instagram: 'meryem.mhamdi'
-google-scholar:
+# facebook: 'Meryem.Mhamdi.2'
+# instagram: 'meryem.mhamdi'
+google-scholar: 'https://scholar.google.ch/citations?user=7xflIKgAAAAJ&hl=en'
 #pinterest: 'username'
 
 #producthunt: '@username'
