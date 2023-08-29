@@ -5,13 +5,13 @@ featured_image:
 ---
 
 #### Cross-lingual Continual Learning:
-Meryem M'hamdi, Xiang Ren, and Jonathan May (Arxiv, Under Review)
+Meryem M'hamdi, Xiang Ren, and Jonathan May (ACL'23)
 
 The longstanding goal of multi-lingual learning has been to develop a universal cross-lingual model that can withstand the changes in multi-lingual data distributions. There has been a large amount of work to adapt such multi-lingual models to unseen target languages. However, the majority of work in this direction focuses on the standard two-hop transfer learning pipeline from source to target languages, whereas in realistic scenarios, new languages can be incorporated at any time in a sequential manner. In this paper, we present a principled \textbf{C}ross-lingual \textbf{C}ontinual \textbf{L}earning (CCL) evaluation paradigm, where we analyze different categories of approaches used to continually adapt to emerging data from different languages. We provide insights into what makes multilingual sequential learning particularly challenging. To surmount such challenges, we benchmark a representative set of cross-lingual continual learning algorithms and analyze their knowledge preservation, accumulation, and generalization capabilities compared to baselines on carefully curated datastreams. The implications of this analysis include a recipe for how to measure and balance different cross-lingual continual learning desiderata, which go beyond conventional transfer learning.
 
 {% include image-caption.html imageurl="/assets/images/projects/xling-contlearn.png" title="Cross-lingual Continual Learning Challenge" caption="Cross-lingual Continual Learning Challenge" %}
 
-<a href="https://arxiv.org/abs/2205.11152"> [Paper] </a>
+<a href="https://aclanthology.org/2023.acl-long.217"> [Paper] </a>
 
 #### X-METRA-ADA: Cross-lingual Meta-Transfer learning Adaptation to Natural Language Understanding and Question Answering:
 Meryem M'hamdi, Doo Soon Kim, Franck Dernoncourt, Trung Bui, Xiang Ren, Jonathan May (NAACL'21)
