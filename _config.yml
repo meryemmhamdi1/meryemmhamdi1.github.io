@@ -20,14 +20,27 @@ author:
   name: "Meryem M'hamdi"
   image: 'authorimage2.png'
   greetings: 'Hi!'
-  description: "<p> My name is Meryem M'hamdi. 
-  I recently earned my PhD in Computer Science from the University of Southern California. 
-  My research focused on advancing multilingual language models beyond traditional data-intensive, identically-distributed approaches. 
-  Specifically, I developed human-like cross-lingual transfer learning techniques using meta-learning, continual learning, and curriculum learning. 
-  These innovations enhance model generalization across low-resource and unseen languages, applied effectively in multilingual information extraction, natural language understanding, and semantic search applications. 
-  <br> <br>  During my journey, I collaborated with many leading multinational companies including Sony, Swisscom, Adobe Research, and more recently Microsoft. 
-  <br> <br>  With a rich background in computer science and representation learning and a focus on applied research, my journey has led me to Microsoft, where I currently serve as both a Data Scientist II. At the forefront of Bing's multimedia team, my efforts have been instrumental in advancing user embeddings towards more personalized recommendation systems, building from scratch a state-of-the-art large language model to refine the user experience. 
-  <br> <br>  As a Moroccan, I am fluent in four languages/dialects: Standard Arabic, Moroccan Arabic, French, and English, with basic proficiency in Spanish and German. I have a passion for learning new languages, which broadens my cultural understanding. I also enjoy traveling; I've visited over 10 countries and have lived in three continents, including Africa (my place of origin) and Europe, where I pursued my Master's degree. In my leisure time, I indulge in activities like yoga, zumba, and occasional singing. </p>"
+  description: >-
+    <p>I'm Meryem M'hamdi, a Computer Science PhD graduate from
+    the University of Southern California (USC), specializing
+    in Natural Language Processing, multilingual learning,
+    and large language models.</p>
+
+    <p>My research focuses on developing more adaptive and
+    generalizable AI systems through meta-learning, continual
+    learning, and cross-lingual transfer learning. My work
+    has been published at ACL, NAACL, and SIGIR.</p>
+
+    <p>Beyond academia, I have worked with Adobe Research,
+    Microsoft, and Meta, contributing to projects spanning
+    semantic retrieval, recommendation systems, LLM evaluation,
+    alignment, and human-centered AI.</p>
+
+    <p>I'm interested in bridging foundational AI research
+    with real-world applications to build intelligent systems
+    that are reliable, adaptable, and accessible across
+    languages and cultures.</p>
+
   bio: 'Prior to joining ISI, Meryem holds a Master in Computer Science from <a href=https://www.epfl.ch/> Ecole Polytechnique Federale de Lausanne (EPFL) </a>
   in Swizerland and is currently pursuing her PhD in Computer Science with special focus on Natural Language Processing in
   <a href=https://www.usc.edu/> University of Southern California (USC) </a> in Los Angeles. Her research aspirations come
