@@ -20,14 +20,15 @@ author:
   name: "Meryem M'hamdi"
   image: 'cropped_image_.png'
   greetings: 'Hi!'
-  description:
+  description: >-
     <p> I'm a machine learning researcher with a PhD in Computer Science from USC, specializing in Natural Language Processing. I'm currently a Generative AI Research Collaborator at Meta Superintelligence Labs, where I focus on LLM evaluation, post-training data quality, and improving model reliability. </p>
 
-    <p> My background combines academic research in areas like meta-learning and continual learning with industry experience at Meta and Microsoft, where I've worked on model evaluation, personalized recommendation systems, and improving AI performance.</p>
+    <p> My background combines academic research in areas like meta-learning and continual learning with industry experience at Meta and Microsoft, where I've worked on model evaluation, personalized recommendation systems, and improving AI performance. </p>
 
     <p> What motivates me most is bridging research and real-world impact. I'm particularly interested in developing more intuitive, human-centered approaches to AI evaluation, incorporating human feedback to make AI systems more natural and reliable, and making these technologies accessible to people across different languages and communities. </p>
 
-  bio: 'Originally from Morocco, Meryem holds a PhD in Computer Science from the University of Southern California (USC), specializing in Natural Language Processing, and a Master's degree in Computer Science from École Polytechnique Fédérale de Lausanne (EPFL) in Switzerland. She is currently a Research Collaborator at Meta Superintelligence Labs, focusing on generative AI evaluation and model quality. Her research interests include multilingual NLP, meta-learning, continual learning, and human-centered AI. Her passion for languages, travel, and exploring different cultures has inspired her research in making AI more accessible and inclusive across languages and communities.'
+  bio: >- 
+     'Originally from Morocco, Meryem holds a PhD in Computer Science from the University of Southern California (USC), specializing in Natural Language Processing, and a Master's degree in Computer Science from École Polytechnique Fédérale de Lausanne (EPFL) in Switzerland. She is currently a Research Collaborator at Meta Superintelligence Labs, focusing on generative AI evaluation and model quality. Her research interests include multilingual NLP, meta-learning, continual learning, and human-centered AI. Her passion for languages, travel, and exploring different cultures has inspired her research in making AI more accessible and inclusive across languages and communities.'
 
 # Contact form setings
 email: meryemmhamdi1@gmail.com
