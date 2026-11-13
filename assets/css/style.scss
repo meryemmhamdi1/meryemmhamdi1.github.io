@@ -1171,3 +1171,57 @@
     -moz-background-clip: padding;
     background-clip: padding-box;
 }
+
+/* Modern, accessible portfolio navigation */
+.modern-site-header {
+  background: #faf8f6;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.modern-header-inner { gap: 28px; }
+.modern-branding { margin-right: auto; min-width: 0; }
+.modern-brand {
+  display: inline-flex; align-items: center; gap: 11px;
+  font-size: 23px; font-weight: 700; line-height: 1.2;
+  text-decoration: none; white-space: nowrap;
+}
+.modern-brand-mark { color: #4da9b7; font-size: 29px; }
+.site-header .modern-navigation { flex: 0 1 auto; min-width: 0; }
+.modern-nav-links { display: flex; align-items: center; gap: 34px; }
+.modern-nav-links > a {
+  color: #292b35; font-size: 16px; font-weight: 600;
+  text-decoration: none; white-space: nowrap;
+  transition: color .2s ease, background-color .2s ease;
+}
+.modern-nav-links > a:hover, .modern-nav-links > a:focus-visible { color: #288b9d; }
+.modern-nav-links > .modern-cv-button {
+  background: #f6b894; border-radius: 999px; padding: 11px 19px;
+  color: #292b35; font-weight: 700;
+}
+.modern-nav-links > .modern-cv-button:hover,
+.modern-nav-links > .modern-cv-button:focus-visible { background: #efa77e; color: #292b35; }
+.modern-menu-toggle { display: none; }
+.site-header .modern-sidebar-toggle { display: none; }
+@media (max-width: 1000px) {
+  .modern-site-header { position: relative; }
+  .modern-header-inner { flex-wrap: wrap; }
+  .modern-brand { font-size: 20px; }
+  .modern-menu-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid #ddd7d2; border-radius: 9px;
+    background: transparent; color: #292b35;
+    width: 45px; height: 43px; font-size: 25px; cursor: pointer;
+  }
+  .modern-nav-links {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    z-index: 100; background: #faf8f6; border-bottom: 1px solid #e9e3de;
+    padding: 20px 5%; flex-direction: column; align-items: stretch;
+    gap: 20px; box-shadow: 0 12px 20px rgba(0,0,0,.06);
+  }
+  .modern-nav-links.is-open { display: flex; }
+  .modern-nav-links > .modern-cv-button { align-self: flex-start; }
+}
+@media (max-width: 420px) {
+  .modern-brand { font-size: 17px; }
+  .modern-brand-mark { font-size: 24px; }
+}
