@@ -1,42 +1,41 @@
 <header id="masthead" class="site-header outer modern-site-header">
-    <div class="site-header-inside modern-header-inner">
-      <div class="site-branding modern-branding">
-        <a class="modern-brand" href="{{ site.baseurl }}/" rel="home" aria-label="Meryem M'hamdi - Home">
-          <span class="modern-brand-mark" aria-hidden="true">✦</span>
-          <span>Meryem M'hamdi</span>
-        </a>
-      </div>
-  
-      <nav id="main-navigation" class="site-navigation modern-navigation" aria-label="Primary navigation">
-        <button class="modern-menu-toggle" type="button" aria-expanded="false" aria-controls="modern-nav-links" aria-label="Open navigation menu">
-          <span aria-hidden="true">☰</span>
-        </button>
-        <div id="modern-nav-links" class="modern-nav-links">
-          <a href="{{ site.baseurl }}/about/">About</a>
-          <a href="{{ site.baseurl }}/projects-publications/">Research &amp; Projects</a>
-          <a href="{{ site.baseurl }}/contact/">Contact</a>
-          <a class="modern-cv-button" href="{{ site.baseurl }}/Meryem_M_hamdi_CV_Latest.pdf" target="_blank" rel="noopener noreferrer">Download CV <span aria-hidden="true">↗</span></a>
-        </div>
-        <button id="sidebar-show" class="sidebar-toggle modern-sidebar-toggle" type="button" aria-label="Open sidebar"><span class="screen-reader-text">Open Sidebar</span><span class="icon-more" aria-hidden="true"></span></button>
-      </nav>
+  <div class="site-header-inside modern-header-inner">
+    <div class="site-branding modern-branding">
+      <a class="modern-brand" href="{{ site.baseurl }}/" rel="home" aria-label="Meryem M'hamdi - Home">
+        <span class="modern-brand-mark" aria-hidden="true">✦</span>
+        <span>Meryem M'hamdi</span>
+      </a>
     </div>
-  </header>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var toggle = document.querySelector('.modern-menu-toggle');
-      var links = document.getElementById('modern-nav-links');
-      if (!toggle || !links) return;
-      toggle.addEventListener('click', function () {
-        var opened = links.classList.toggle('is-open');
-        toggle.setAttribute('aria-expanded', String(opened));
-        toggle.setAttribute('aria-label', opened ? 'Close navigation menu' : 'Open navigation menu');
-      });
-      links.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          links.classList.remove('is-open');
-          toggle.setAttribute('aria-expanded', 'false');
-        });
+
+    <nav id="main-navigation" class="site-navigation modern-navigation" aria-label="Primary navigation">
+      <button class="modern-menu-toggle" type="button" aria-expanded="false" aria-controls="modern-nav-links" aria-label="Open navigation menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <div id="modern-nav-links" class="modern-nav-links">
+        <a href="{{ site.baseurl }}/about/">About</a>
+        <a href="{{ site.baseurl }}/projects-publications/">Research &amp; Projects</a>
+        <a href="{{ site.baseurl }}/contact/">Contact</a>
+        <a class="modern-cv-button" href="{{ site.baseurl }}/Meryem_M_hamdi_CV_Latest.pdf" target="_blank" rel="noopener noreferrer">Download CV <span aria-hidden="true">↗</span></a>
+      </div>
+      <button id="sidebar-show" class="sidebar-toggle modern-sidebar-toggle" type="button" aria-label="Open sidebar"><span class="screen-reader-text">Open Sidebar</span><span class="icon-more" aria-hidden="true"></span></button>
+    </nav>
+  </div>
+</header>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.querySelector('.modern-menu-toggle');
+    var links = document.getElementById('modern-nav-links');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', function () {
+      var opened = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(opened));
+      toggle.setAttribute('aria-label', opened ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    links.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        links.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
       });
     });
-  </script>
-  
+  });
+</script>
