@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Learning New Languages Without Forgetting Old Ones"
-featured_image_thumbnail: assets/images/posts/2026/continual-learning.jpeg
+featured_image_thumbnail: assets/images/posts/2026/continual-learning.png
 tags: [NLP, Multilingual, Continual Learning, Catastrophic Forgetting,Cross-lingual Generalization]
 research_year: 2023
-featured_image: assets/images/posts/2026/continual-learning.jpeg
+featured_image: assets/images/posts/2026/continual-learning.png
 ---
 
 *Based on my research on cross-lingual continual learning and the corresponding chapter of my dissertation proposal.*
