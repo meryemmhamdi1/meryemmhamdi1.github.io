@@ -3,6 +3,7 @@ layout: post
 title:  "Transfer Learning using Multilingual Embeddings"
 featured_image_thumbnail: assets/images/posts/2018/multilingualism.jpeg
 tags: [ NLP, Embeddings, Multilingual, Transfer Learning, Event Detection, Churn Detection, Document Classification]
+research_year: 2018
 featured_image: assets/images/posts/2018/multilingualism.jpeg
 ---
 

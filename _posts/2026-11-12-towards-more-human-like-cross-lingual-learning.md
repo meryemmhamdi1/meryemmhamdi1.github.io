@@ -3,6 +3,7 @@ layout: post
 title: "Towards More Human-Like Cross-Lingual Learning"
 featured_image_thumbnail: assets/images/posts/2026/Human-Like Cross-Lingual Learning Pipeline.jpeg
 tags: [NLP, Multilingual, Transfer Learning]
+research_year: 2024
 featured_image: assets/images/posts/2026/Human-Like Cross-Lingual Learning Pipeline.jpeg
 ---
 

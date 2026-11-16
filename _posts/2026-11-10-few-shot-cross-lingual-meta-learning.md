@@ -3,6 +3,7 @@ layout: post
 title: "Can AI Learn New Languages from Just a Few Examples?"
 featured_image_thumbnail: assets/images/posts/2026/meta-learning.jpeg
 tags: [NLP, Meta-Learning, MAML, Multilingual, Transfer Learning]
+research_year: 2021
 featured_image: assets/images/posts/2026/meta-learning.jpeg
 ---
 

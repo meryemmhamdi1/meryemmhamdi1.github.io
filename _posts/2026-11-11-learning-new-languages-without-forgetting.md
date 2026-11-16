@@ -3,6 +3,7 @@ layout: post
 title: "Learning New Languages Without Forgetting Old Ones"
 featured_image_thumbnail: assets/images/posts/2026/continual-learning.jpeg
 tags: [NLP, Multilingual, Continual Learning, Catastrophic Forgetting,Cross-lingual Generalization]
+research_year: 2023
 featured_image: assets/images/posts/2026/continual-learning.jpeg
 ---
 
@@ -37,4 +38,4 @@ A key emphasis in my work is **multi-hop evaluation**. Instead of measuring only
 
 This perspective is useful beyond multilingual NLP. AI systems deployed in the real world are continually updated with new capabilities and data. Measuring whether they retain earlier competencies is just as important as measuring their latest gains.
 
-**Read the research:** [Cross-lingual Continual Learning](https://arxiv.org/abs/2205.11152) · [Research code](https://github.com/meryemmhamdi1/x-continuous-learning).
+**Read the research:** [Cross-lingual Continual Learning](https://aclanthology.org/2023.acl-long.217/) · [Research code](https://github.com/meryemmhamdi1/x-continuous-learning).
