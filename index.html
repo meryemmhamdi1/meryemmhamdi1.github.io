@@ -3,6 +3,19 @@ layout: default
 title: Meryem M'hamdi
 ---
 
+<style>
+  .older-highlights { margin: 1.6rem 0; }
+  .older-highlights > summary {
+    color: #d81578;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.8rem 0;
+  }
+  .older-highlights > summary:hover { text-decoration: underline; }
+  .older-highlights > summary:focus-visible { outline: 2px solid #d81578; outline-offset: 4px; }
+  .older-highlights-content { padding-top: 0.5rem; }
+</style>
+
 <!-- News Index -->
 <div class="outer">
     {% if page.url == "/" %}
@@ -154,6 +167,11 @@ title: Meryem M'hamdi
           </li>
         </ul>
   
+        <!-- Earlier news: collapsed by default -->
+        <details class="older-highlights">
+          <summary>Older Highlights (2018–2023)</summary>
+          <div class="older-highlights-content">
+
         <!-- 2023 -->
         <h3 id="2023">2023</h3>
         <ul>
@@ -379,6 +397,8 @@ title: Meryem M'hamdi
             Master in Computer Science!
           </li>
         </ul>
+          </div>
+        </details>
   
       </div>
     </div>
@@ -387,7 +407,7 @@ title: Meryem M'hamdi
 <!-- Posts Index -->
 <div class="outer">
     {% if page.url == "/" %}
-    <div class="post-feed-title inner">Latest Articles</div>
+    <div class="post-feed-title inner">Research Stories</div>
     {% endif %}
     <div class="post-feed inner-wide">
         {% for post in paginator.posts %}
