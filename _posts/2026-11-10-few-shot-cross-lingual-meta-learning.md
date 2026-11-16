@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Can AI Learn New Languages from Just a Few Examples?"
-tags: [NLP, Multilingual, Transfer Learning]
+featured_image_thumbnail: assets/images/posts/2026/meta-learning.jpeg
+tags: [NLP, Meta-Learning, MAML, Multilingual, Transfer Learning]
+featured_image: assets/images/posts/2026/meta-learning.jpeg
 ---
 
 *An accessible introduction to the few-shot and meta-learning thread of my dissertation research.*

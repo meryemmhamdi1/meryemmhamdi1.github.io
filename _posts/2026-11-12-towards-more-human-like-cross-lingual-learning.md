@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Towards More Human-Like Cross-Lingual Learning"
+featured_image_thumbnail: assets/images/posts/2026/Human-Like Cross-Lingual Learning Pipeline.jpeg
 tags: [NLP, Multilingual, Transfer Learning]
+featured_image: assets/images/posts/2026/Human-Like Cross-Lingual Learning Pipeline.jpeg
 ---
 
 *Research reflections based on my dissertation proposal, “Towards More Human-Like Cross-lingual Transfer Learning” (USC, 2023).*
@@ -30,4 +32,4 @@ My dissertation proposal also explored a longer-term direction inspired by cogni
 
 The larger goal is to make multilingual systems more **adaptive, efficient, and accessible**—especially where labeled data is scarce. That requires asking not only *how well does a model perform today?*, but also *how quickly can it adapt, what does it remember, and who is left out?*
 
-**Further reading:** [Cross-lingual event trigger extraction (CoNLL 2019)](https://aclanthology.org/K19-1061/) · [X-METRA-ADA (NAACL 2021)](https://aclanthology.org/2021.naacl-main.283/) · [Cross-lingual Continual Learning (preprint)](https://arxiv.org/abs/2205.11152).
+**Further reading:** [PhD Thesis: Towards More Human-Like Cross-lingual Transfer Learning] (https://www.proquest.com/openview/569233172086863362ee57bc72cb9142/1?pq-origsite=gscholar&cbl=18750&diss=y)[Cross-lingual event trigger extraction (CoNLL 2019)](https://aclanthology.org/K19-1061/) · [X-METRA-ADA (NAACL 2021)](https://aclanthology.org/2021.naacl-main.283/) · [Cross-lingual Continual Learning](https://aclanthology.org/2023.acl-long.217/).
